@@ -1,0 +1,91 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 640px;
+  margin: var(--geist-gap);
+}
+
+.unavailable-letter {
+  color: #CCC;
+}
+
+.letter-current {
+  border: 1px solid var(--color-accent-1);
+  padding: var(--geist-gap);
+  border-radius: var(--geist-radius) var(--geist-radius) 0 0;
+  text-align: left;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: box-shadow .2s ease,border .2s ease;
+  font-size: 4em;
+  background: white;
+}
+
+.progress {
+  flex: 1 1;
+  display: flex;
+  background: white;
+  border: 1px solid var(--color-accent-1);
+}
+
+.progress-bar {
+  height: 32px;
+}
+
+.progress-bar-free {
+  background: blue;
+}
+
+.progress-bar-stop {
+  background: red;
+}
+
+.btn {
+  background: var(--color-accent-1);
+  color: #444;
+  padding: var(--geist-gap);
+  border-radius: var(--geist-radius);
+  border: 1px solid var(--color-accent-1);
+  font-size: var(--text-size);
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+.btn-container {
+  text-align: center;
+  margin: var(--geist-gap) 0;
+}
+
+.btn-container .btn {
+  margin: var(--geist-gap);
+}
+
+.btn:disabled {
+  cursor: disabled;
+}
